@@ -1,0 +1,202 @@
+Saturday 23rd of April 2022 07:40:06 PM
+Exception: Negative currentShield! in /var/www/wsites/xnova/includes/libs/opbe/models/ShipType.php:438
+Stack trace:
+#0 /var/www/wsites/xnova/includes/libs/opbe/models/Fleet.php(148): ShipType->inflictDamage(1950000, 100000)
+#1 /var/www/wsites/xnova/includes/libs/opbe/models/Player.php(147): Fleet->inflictDamage(Object(FireManager))
+#2 /var/www/wsites/xnova/includes/libs/opbe/models/PlayerGroup.php(106): Player->inflictDamage(Object(FireManager))
+#3 /var/www/wsites/xnova/includes/libs/opbe/core/Round.php(109): PlayerGroup->inflictDamage(Object(FireManager))
+#4 /var/www/wsites/xnova/includes/libs/opbe/core/Battle.php(80): Round->startRound()
+#5 /var/www/wsites/xnova/includes/libs/opbe/utils/DebugManager.php(60): Battle->startBattle()
+#6 /var/www/wsites/xnova/includes/libs/opbe/implementations/2Moons/2.0_injectionMode/calculateAttack.php(115): DebugManager::{closure}()
+#7 /var/www/wsites/xnova/includes/pages/game/ShowBattleSimulatorPage.class.php(155): calculateAttack(Array, Array, '50', '0')
+#8 /var/www/wsites/xnova/game.php(58): ShowBattleSimulatorPage->send()
+#9 {main}
+$_POST =
+$_GET =
+[log]attackers =         <table class="lined widthFull">
+    <caption> <br> 1200% - 1160% - 1150%</caption>
+    <thead>
+        <tr>
+                            <th>Destructor</th>
+                            <th>Estrella de la muerte</th>
+                            <th>Luna Negra</th>
+                    </tr>
+    </thead>
+    <tbody>
+        <tr>
+                
+                <td>100000</td>                   
+                
+                <td>40000</td>                   
+                
+                <td>100000</td>                   
+                    </tr>
+    </tbody>
+</table><br>
+[log]defenders =         <table class="lined widthFull">
+    <caption> <br> 1200% - 1160% - 1150%</caption>
+    <thead>
+        <tr>
+                            <th>Luna Negra</th>
+                    </tr>
+    </thead>
+    <tbody>
+        <tr>
+                
+                <td>100000</td>                   
+                    </tr>
+    </tbody>
+</table><br>
+--- Round 1 ---<br><br>[log]calculating fire from attacker 213<br>
+[log]$max = 0<br>
+[log]$min = 0<br>
+[log]$mean = 0<br>
+[log]$tmpshots = 0<br>
+[log]$this->shots = 100000<br>
+[log]calculating fire from attacker 214<br>
+[log]$max = 0<br>
+[log]$min = 0<br>
+[log]$mean = 0<br>
+[log]$tmpshots = 0<br>
+[log]$this->shots = 40000<br>
+[log]calculating fire from attacker 216<br>
+[log]$max = 0<br>
+[log]$min = 0<br>
+[log]$mean = 0<br>
+[log]$tmpshots = 0<br>
+[log]$this->shots = 100000<br>
+[log]calculating fire from attacker 216<br>
+[log]$max = 0.85714285714286<br>
+[log]$min = 0.57142857142857<br>
+[log]$mean = 0.71428571428571<br>
+[log]$tmpshots = 70033<br>
+[log]$this->shots = 170033<br>
+***** firing to defenders *****<br>---------** firing to player with ID = 2001 **---------- <br>------- firing to fleet with ID = 0 -------- <br>[log]---- firing from 213 to 216 ----<br>
+[log]Defender single hull = 12500000<br>
+[log]Defender count = 100000<br>
+[log]currentShield before = 88200000000<br>
+[log]currentLife before = 1250000000000<br>
+[log]damage = 26000<br>
+[log]count = 100000<br>
+[log]$ps->getAssorbedDamage() = 2600000000<br>
+[log]currentShield after = 85600000000<br>
+[log]currentLife after = 1250000000000<br>
+[log]lastShipHit after = 100000<br>
+[log]lastShots after = 100000<br>
+[log]$xs = result=100000;rest=0;<br>
+array (
+  216 => 0.0,
+)[log]$tmp = <br>
+[log]---- firing from 214 to 216 ----<br>
+[log]Defender single hull = 12500000<br>
+[log]Defender count = 100000<br>
+[log]currentShield before = 85600000000<br>
+[log]currentLife before = 1250000000000<br>
+[log]damage = 2600000<br>
+[log]count = 40000<br>
+[log]$ps->getAssorbedDamage() = 34240000000<br>
+[log]currentShield after = 51360000000<br>
+[log]currentLife after = 1180240000000<br>
+[log]lastShipHit after = 140000<br>
+[log]lastShots after = 140000<br>
+[log]$xs = result=40000;rest=0;<br>
+array (
+  216 => 0.0,
+)[log]$tmp = <br>
+[log]---- firing from 216 to 216 ----<br>
+[log]Defender single hull = 12500000<br>
+[log]Defender count = 100000<br>
+[log]currentShield before = 51360000000<br>
+[log]currentLife before = 1180240000000<br>
+[log]damage = 1950000<br>
+[log]count = 100000<br>
+[log]$ps->getAssorbedDamage() = 51360000000<br>
+[log]currentShield after = -7.62939453125E-6<br>
+[log]currentLife after = 1036600000000<br>
+[log]lastShipHit after = 240000<br>
+[log]lastShots after = 240000<br>
+array (
+  'slots' => '2',
+  'Pid' => '0',
+  'battleinput' => 
+  array (
+    0 => 
+    array (
+      1 => 
+      array (
+        901 => '0',
+        902 => '0',
+        903 => '0',
+        109 => '120',
+        110 => '115',
+        111 => '116',
+        120 => '20',
+        121 => '5',
+        122 => '7',
+        199 => '7',
+        202 => '0',
+        203 => '0',
+        204 => '0',
+        205 => '0',
+        206 => '0',
+        207 => '0',
+        208 => '0',
+        209 => '0',
+        210 => '0',
+        211 => '0',
+        212 => '0',
+        213 => '0',
+        214 => '0',
+        215 => '0',
+        216 => '100000',
+        217 => '0',
+        218 => '0',
+        219 => '0',
+        220 => '0',
+        401 => '0',
+        402 => '0',
+        403 => '0',
+        404 => '0',
+        405 => '0',
+        406 => '0',
+        407 => '0',
+        408 => '0',
+        409 => '0',
+        410 => '0',
+        411 => '0',
+      ),
+      0 => 
+      array (
+        109 => '20',
+        110 => '15',
+        111 => '16',
+        120 => '20',
+        121 => '5',
+        122 => '7',
+        199 => '7',
+        202 => '0',
+        203 => '0',
+        204 => '0',
+        205 => '0',
+        206 => '0',
+        207 => '0',
+        208 => '0',
+        209 => '0',
+        210 => '0',
+        211 => '0',
+        212 => '0',
+        213 => '100000',
+        214 => '40000',
+        215 => '0',
+        216 => '100000',
+        217 => '0',
+        218 => '0',
+        219 => '0',
+        220 => '0',
+      ),
+    ),
+  ),
+)array (
+  'page' => 'battleSimulator',
+  'mode' => 'send',
+)
